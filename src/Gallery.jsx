@@ -8,10 +8,10 @@ import InfoIcon from '@mui/icons-material/Info';
 
 export default function Gallery() {
     return (
-      <ImageList gap={5} sx={{ width: 800, height: 450 }}>
-        <ImageListItem key="Subheader" cols={4}>
+      <ImageList gap={5} cols={4} sx={{  height: 450, p:10 }}>
+        {/* <ImageListItem key="Subheader" cols={4}>
           <ListSubheader component="div">December</ListSubheader>
-        </ImageListItem>
+        </ImageListItem> */}
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             {/* <img
@@ -43,7 +43,7 @@ export default function Gallery() {
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: 'https://people.com/thmb/-z8a-06FXODEt_ty4df_q-RMHKc=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(842x209:844x211):format(webp)/courtney-tillia-1-a133657a871c4756ad1d861136b3a71d.jpg',
     title: 'Breakfast',
     author: '@bkristastucchio',
     rows: 2,
@@ -51,7 +51,7 @@ const itemData = [
     featured: true,
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: 'https://i2-prod.dailystar.co.uk/incoming/article29059596.ece/ALTERNATES/s1200d/0_TAKEN-WITHOUT-PERMISSION-FROM-INSTAGRAM-EDITORIAL-CALL-TO-USE-OnlyFans-star-is-using-her-earnings.jpg',
     title: 'Burger',
     author: '@rollelflex_graphy726',
   },
